@@ -32,7 +32,11 @@ class ThreadDemoApplicationTests {
 
     @Test
     void testCompletableFutureTask() throws InterruptedException, ExecutionException {
-       myService.performTask();
-       myService.performTask2();
+        // 测试异步编程, 使用自带默认线程池
+        // myService.performTask();
+        // 测试异步编程,使用自定义线程池
+        myService.performTask2();
+        // 测试并发编程
+        // myService.performTask3();
     }
 }
